@@ -45,7 +45,7 @@ html{
 //end header
 
 
-//start alpha section
+//start section alpha 
 .alpha{
     text-align: center;
     &-inner{
@@ -87,7 +87,7 @@ html{
     background-color: #F9F9F9;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     
     &-box{
         cursor: pointer;
@@ -164,3 +164,92 @@ html{
     }
 }
 
+// end section alpha
+
+
+// start section about
+.about{
+    background-color: #F9F9F9;
+    &-inner{
+        padding: 0 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-images{
+        margin-right: 15px;
+        text-align: right;
+        img{
+            width: 450px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+    }
+    &__info{
+        border-right: 4px solid #a4c639;
+        padding: 60px 20px 60px 60px;
+        background-color: #fff;
+        &-title{
+            font-weight: bold;
+            line-height: 40px;
+            font-size: 30px;
+            padding-bottom: 15px;
+            text-transform: uppercase;
+        }
+        &-subtitle{
+            line-height: 30px;
+            font-size: 22px;
+            text-transform: uppercase;
+            padding-bottom: 15px;
+        }
+        &-text{
+            padding: 10px 20px 0 0;
+            line-height: 20px;
+            color: #343434;
+        }
+    }
+    &__design{
+        margin-top: 50px;
+        margin-bottom: -40px;
+        background-color: #fff;
+        border-left: 4px solid #a4c639;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 20px;
+        &-info{
+            max-width: 550px;
+            padding: 0 15px;
+        }
+        &-title{
+            font-size: 30px;
+            padding-bottom: 30px;
+        }
+        &-text{
+            padding-bottom: 10px;
+            padding-right: 30px;
+            color: #343434;
+          
+        }
+        &-progress{
+            margin-right: auto;
+            &-item{
+                padding-bottom: 10px;
+                position: relative;
+                span{
+                    position: absolute;
+                    right: 0px;
+                    font-weight: 700;
+                }
+            progress  {
+                display: block;
+                margin: 5px 0;
+                width: 550px; 
+            }
+            
+            }
+        }
+
+    }
+
+}

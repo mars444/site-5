@@ -189,7 +189,7 @@ html{
         }
     }
     &__info{
-        border-right: 4px solid #a4c639;
+        border-right: 4px solid  $green;
         padding: 60px 20px 60px 60px;
         background-color: #fff;
         &-title{
@@ -215,7 +215,7 @@ html{
         margin-top: 50px;
         margin-bottom: -40px;
         background-color: #fff;
-        border-left: 4px solid #a4c639;
+        border-left: 4px solid $green;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -285,14 +285,14 @@ html{
         &-image{
           
             position: relative;
-            border-right: 3px solid #a4c639;
+            border-right: 3px solid  $green;
             border-left: 3px solid #202020;
             border-radius: 50%;
             width: 80px;
             height: 80px;
             transition: all .7s;
             &:hover{
-                border-left: 3px solid #a4c639;
+                border-left: 3px solid  $green;
                 border-right: 3px solid #202020;
                 svg{
                     transform: translate(-50%, -50%) scale(1.2);
@@ -318,3 +318,69 @@ html{
     }
 }
 //end section service
+
+//start section team
+.team{
+    background-color: #F9F9F9;
+    &-title{
+       font-size: 30px;
+       padding: 120px 0;
+       text-align: center;
+
+    }
+    &-div{
+
+    
+    }
+    &-inner{
+        padding-bottom: 50px;
+        margin-top: -40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    &-photo{
+        border-radius: 15px;
+        transition: all .5s;
+        width: 270px;
+        height:250px;
+      
+    }
+    &__box{
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        overflow: hidden;
+        background-color: #fff;
+        margin-bottom: 40px;
+        max-width: 555px;
+        height: 250px;
+        border-right: 4px solid $green;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-title{
+            font-size: 20px;
+            line-height: 30px;
+            span{
+                display: block;
+                color: $green;
+                font-size: 16px;
+            }
+        }
+        &-text{
+            font-size: 14px;
+            line-height: 20px;
+            color: #343434;
+        }
+        &__right{
+            padding: 10px;
+        }
+    }
+
+}
+.paddingbox{
+    margin-left: 200px;
+}
+//end section team

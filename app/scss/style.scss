@@ -15,5 +15,34 @@ html{
      }
  }
 
+ //start header
+.header{
+    background-color: #fff;
+    &-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height:80px ;
+    }
+
+}
+.menu{
+    li{
+        text-transform: uppercase;
+        display: inline-block;
+        color:#fff;
+        a{
+            transition: all .5s;
+            &:hover{
+                color: $green;
+            }
+        }
+    }
+    li + li{
+        margin-left: 40px;
+    }
+}
+//end header
+
 
 

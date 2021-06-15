@@ -45,4 +45,122 @@ html{
 //end header
 
 
+//start alpha section
+.alpha{
+    text-align: center;
+    &-inner{
+        padding-top:190px;
+        padding-bottom: 50px;
+    }
+    &-title{
+        font-size: 64px;
+        color: $green;
+        text-transform: uppercase;
+    }
+    &-subtitle{
+        padding-bottom: 30px;
+        font-size: 36px;
+        color: #fff;
+        
+    }
+    &-button{
+        border-radius: 15px;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 60px;
+        padding: 20px;
+        background-color: #fff;
+        text-transform: uppercase;
+        color: #333333;
+        margin-bottom: 140px;
+        transition: all .5s;
+        &:hover{
+            background-color: $green;
+        }
+       
+    }
+    
+
+}
+.alpha__bot{
+    border-radius: 15px;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    
+    &-box{
+        cursor: pointer;
+        
+        position: relative;
+        background-color: #fff;
+        max-width: 400px;
+        padding: 60px 30px 60px 100px;
+        transition: all .5s;
+        box-shadow:  inset 0px 0px 10px 0px  rgba(50, 50, 50, 0.5);
+        margin-top: -40px;
+        &:nth-child(1){
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+             &:hover{
+                 background-color:#99CC99;
+                 svg{
+                     transform: translate(-50%, -50%) scale(1.2);
+                    }
+            }
+        }
+        &:nth-child(2){
+            &:hover{
+                 background-color:#99CCFF;
+                 svg{
+                     transform: translate(-50%, -50%) scale(1.2);
+                    }
+            }
+        }
+        &:nth-child(3){
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            &:hover{
+                background-color:#CCCC99;
+                svg{
+                    transform:translate(-50%, -50%) scale(1.2);
+                }
+            }
+        }
+    }
+    &-title{
+        text-align: left;
+        font-size: 24px;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        span{
+            color: $green;
+        }
+    }
+    &-text{
+        font-size: 13px;
+        text-align: justify;
+        line-height: 20px;
+    }
+    &-icon{
+        background-color: #fff;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        left: 20px;
+        top:60px;
+       
+        border-radius: 50%;
+        border: 2px solid $green;
+        svg{
+            position: absolute;
+            left: 50%;
+            top : 52%;
+            transform: translate(-50%, -50%);
+            transition: all .5s
+            
+        }
+        
+    }
+}
 

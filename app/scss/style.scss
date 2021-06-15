@@ -342,15 +342,12 @@ html{
     }
     
     &-photo{
-        border-radius: 15px;
         transition: all .5s;
         width: 270px;
         height:250px;
       
     }
     &__box{
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
         overflow: hidden;
         background-color: #fff;
         margin-bottom: 40px;
@@ -382,5 +379,8 @@ html{
 }
 .paddingbox{
     margin-left: 200px;
+}
+.teamnoborder{
+    border: none;
 }
 //end section team

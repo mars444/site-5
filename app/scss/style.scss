@@ -446,6 +446,7 @@ html{
         margin-bottom: 20px;
    }
    &-inner{
+       margin-bottom: -40px;
        display: flex;
        justify-content: space-between;
    }
@@ -522,3 +523,60 @@ html{
          
     }  
 }
+//end section contact
+
+
+//start footer
+.footer{
+    padding-top: 100px;
+    background-color: #F9F9F9;
+    &-line{
+        border: 0;
+        border-top: 1px solid #eee;
+        width: 100px;
+       margin: 20px auto;
+    }
+    &-text{
+        text-align: center;
+        span{
+            a{
+                color: $green;
+            }
+            
+        }
+    }
+    &-social{
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        li{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: all .5s;
+            background-color:#fff;
+            position: relative;
+            svg{
+                fill: #818181;
+                position: absolute;
+                left: 50%;
+                top : 50%;
+                transform: translate(-50%, -50%);
+                transition: all .5s;
+            }
+            &:hover{
+                background-color: $green;
+                svg{
+                    fill: #fff;
+                }
+            }
+            
+        }
+        li + li{
+            margin-left: 20px;
+        }
+
+    }
+    
+}
+//end footer

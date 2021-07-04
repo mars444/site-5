@@ -18,36 +18,52 @@
                 <div class="logo">
                     <img src="images/logo.png" alt="" class="logo-img">
                 </div>
+                <div class="menu-icon">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <title>menu</title>
+                        <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+                    </svg>
+                </div>
+                <div class="menu-icon-close">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <title>x</title>
+                        <path
+                            d="M30 24.398l-8.406-8.398 8.406-8.398-5.602-5.602-8.398 8.402-8.402-8.402-5.598 5.602 8.398 8.398-8.398 8.398 5.598 5.602 8.402-8.402 8.398 8.402z">
+                        </path>
+                    </svg>
+
+                </div>
                 <nav class="menu">
+
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="#home" class="menu__item-link">
+                            <a data-goto=".home" href="#" class="menu__item-link">
                                 home
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="#about" class="menu__item-link">
+                            <a data-goto=".about" href="#" class="menu__item-link">
                                 about us
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="#service" class="menu__item-link">
+                            <a data-goto=".service" href="#" class="menu__item-link">
                                 service
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="#team" class="menu__item-link">
+                            <a data-goto=".team" href="#" class="menu__item-link">
                                 team
                             </a>
                         </li>
-                       
+
                         <li class="menu__item">
-                            <a href="#price" class="menu__item-link">
+                            <a data-goto=".price" href="#" class="menu__item-link">
                                 price
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="#contact" class="menu__item-link">
+                            <a data-goto=".contact" href="#" class="menu__item-link">
                                 contact
                             </a>
                         </li>
@@ -79,7 +95,9 @@
     </section>
     <section class="home__bot">
         <div class="container-fluid">
-            <div class="home__bot">
+
+            <div class="home__bot-inner">
+
                 <div class="home__bot-box">
                     <div class="home__bot-title">
                         template
@@ -130,6 +148,7 @@
                     </div>
                     <div class="home__bot-text">
                         templatemo is a great website for you to explore and download lastest HTML CSS templates.
+                        
                     </div>
                     <div class="home__bot-icon">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="34" height="28"
@@ -139,7 +158,6 @@
                                 d="M10 25.5l6-3v-4.906l-6 2.562v5.344zM9 18.406l6.312-2.703-6.312-2.703-6.312 2.703zM26 25.5l6-3v-4.906l-6 2.562v5.344zM25 18.406l6.312-2.703-6.312-2.703-6.312 2.703zM18 13.828l6-2.578v-4.156l-6 2.562v4.172zM17 7.906l6.891-2.953-6.891-2.953-6.891 2.953zM34 16v6.5c0 0.75-0.422 1.453-1.109 1.781l-7 3.5c-0.281 0.156-0.578 0.219-0.891 0.219s-0.609-0.063-0.891-0.219l-7-3.5c-0.047-0.016-0.078-0.031-0.109-0.063-0.031 0.031-0.063 0.047-0.109 0.063l-7 3.5c-0.281 0.156-0.578 0.219-0.891 0.219s-0.609-0.063-0.891-0.219l-7-3.5c-0.688-0.328-1.109-1.031-1.109-1.781v-6.5c0-0.797 0.484-1.516 1.219-1.844l6.781-2.906v-6.25c0-0.797 0.484-1.516 1.219-1.844l7-3c0.25-0.109 0.516-0.156 0.781-0.156s0.531 0.047 0.781 0.156l7 3c0.734 0.328 1.219 1.047 1.219 1.844v6.25l6.781 2.906c0.75 0.328 1.219 1.047 1.219 1.844z">
                             </path>
                         </svg>
-
                     </div>
                 </div>
             </div>
@@ -149,8 +167,9 @@
         <div class="container">
             <div class="about-inner">
                 <div class="about-images">
-                    <img src="images/about-img1.jpg" alt="">
-                    <img src="images/about-img2.jpg" alt="">
+                    <div class="about-images-inner"> <img src="images/about-img1.jpg" alt=""></div>
+
+                    <div class="about-images-inner"><img src="images/about-img2.jpg" alt=""></div>
                 </div>
                 <div class="about__info">
                     <h2 class="about__info-title">
@@ -341,8 +360,7 @@
                             </span>
                         </h4>
                         <p class="team__box-text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet.
+                            Lorem i
                         </p>
 
                     </div>
@@ -361,6 +379,7 @@
                         <p class="team__box-text">
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                             tincidunt ut laoreet.
+                          
                         </p>
 
                     </div>
@@ -487,13 +506,13 @@
             <div class="contact-inner">
                 <div class="contact__info">
                     <div class="contact__info-title">
-                        ADDRESS
+                        ADDRESS:
                         <span>
                             123, Rama IX, Bangkok 12340, Thailand.
                         </span>
                     </div>
                     <div class="contact__info-title">
-                        EMAIL
+                        EMAIL:
                         <span>
                             <a href="mailto:petromars444@gmail.com">
                                 petromars444@gmail.com
@@ -501,7 +520,7 @@
                         </span>
                     </div>
                     <div class="contact__info-title">
-                        PHONE
+                        PHONE:
                         <span>
                             <a href="tel:+79251415930">
                                 +79251415930
@@ -515,9 +534,9 @@
 
                 <form class="contact__form" action="">
                     <input class="contact__form-name" type="text" placeholder="Name">
-                    <input class="contact__form-mail" type="email" placeholder="e-mail">
-                    <input class="contact__form-theme" type="text" placeholder="theme">
-                    <textarea class="contact__form-textarea" name="" id="" cols="30" rows="10">Message</textarea>
+                    <input class="contact__form-mail" type="email" placeholder="E-mail">
+                    <input class="contact__form-theme" type="text" placeholder="Theme">
+                    <textarea class="contact__form-textarea" placeholder="Messahe" name="" id="" cols="30" rows="10"></textarea>
                     <input class="contact-btn" type="submit" value="SEND MESSAGE">
                 </form>
 

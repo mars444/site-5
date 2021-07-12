@@ -18,6 +18,17 @@ body {
 body.lock {
     overflow: hidden;
 }
+//add aniimation
+
+.element-animation {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  .element-animation.element-show {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
+  }
 
 //start header
 .header {
@@ -78,11 +89,13 @@ body.lock {
         font-size: 64px;
         color: $green;
         text-transform: uppercase;
+        transition: all 1s;
     }
     &-subtitle {
         padding-bottom: 30px;
         font-size: 36px;
         color: #fff;
+        transition: all 1.5s;
     }
     &-button {
         border-radius: 15px;
@@ -110,6 +123,15 @@ body.lock {
         justify-content: space-between;
     }
     &-box {
+        &:nth-child(1){
+            transition: all 1s;
+        }
+        &:nth-child(2){
+            transition: all 1.7s;
+        }
+        &:nth-child(3){
+            transition: all 2.4s;
+        }
         margin-top: -50px;
         cursor: pointer;
         position: relative;
@@ -583,5 +605,7 @@ body.lock {
     }
 }
 //end footer
+
+
 
 @import "_media";

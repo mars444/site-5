@@ -1,5 +1,21 @@
 $(function(){
 
+
+
+
+  var header = $('.header'),
+	scrollPrev = 0;
+
+$(window).scroll(function() {
+	var scrolled = $(window).scrollTop();
+ 
+	if ( scrolled > 100 && scrolled > scrollPrev ) {
+		header.addClass('out');
+	} else {
+		header.removeClass('out');
+	}
+	scrollPrev = scrolled;
+});
     const menuLinks = document.querySelectorAll('.menu__item-link');
     if (menuLinks.length > 0) {
       menuLinks.forEach(menuLink => {

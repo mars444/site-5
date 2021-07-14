@@ -18,6 +18,9 @@ body {
 body.lock {
     overflow: hidden;
 }
+.header.out {
+	transform: translateY(-100%);
+}
 //add aniimation
 
 .element-animation {
@@ -32,6 +35,7 @@ body.lock {
 
 //start header
 .header {
+    transition: all .5s;
     position: fixed;
     width: 100%;
     background-color: #fff;
@@ -127,10 +131,10 @@ body.lock {
             transition: all 1s;
         }
         &:nth-child(2){
-            transition: all 1.7s;
+            transition: all 2s;
         }
         &:nth-child(3){
-            transition: all 2.4s;
+            transition: all 3s;
         }
         margin-top: -50px;
         cursor: pointer;
@@ -357,8 +361,7 @@ body.lock {
         padding: 100px 0;
         text-align: center;
     }
-    &-div {
-    }
+   
     &-inner {
         margin-top: -40px;
         display: flex;
@@ -381,7 +384,7 @@ body.lock {
         background-color: #fff;
         margin-bottom: 40px;
         width: 555px;
-
+       
         border-right: 4px solid $green;
 
         align-items: center;
@@ -410,6 +413,7 @@ body.lock {
 }
 .teamnoborder {
     border: none;
+    transition: all 0.5s !important;
 }
 //end section team
 
@@ -555,8 +559,7 @@ body.lock {
 
 //start footer
 .footer {
-    &-inner {
-    }
+ 
     padding-top: 100px;
     background-color: #f9f9f9;
     &-line {

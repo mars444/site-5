@@ -10,6 +10,12 @@
         }
     }
 }
+
+@media screen and (min-width: 1001px) {
+    .header.out {
+        transform: translateY(-100%);
+    }
+}
 @media screen and (max-width: 1193px) {
     .team {
         &__box {
